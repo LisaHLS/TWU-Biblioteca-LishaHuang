@@ -41,4 +41,13 @@ public class Book {
     public String toString(){
         return String.format("%-20s%-20s%-20s\n",name,author,publishedYear);
     }
+
+    @Override
+    public boolean equals(Object object){
+        Book bookObject = (Book) object;
+        if(null != object && this.name.equals(bookObject.getName())
+            && this.author.equals(bookObject.getAuthor())
+            && this.publishedYear == bookObject.getPublishedYear()) return true;
+        return false;
+    }
 }

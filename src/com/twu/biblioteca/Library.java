@@ -8,6 +8,14 @@ public class Library {
     public static final String ISOLATING_LINE  = "==========================================================\n";
     private List<Book> bookList;
 
+    public List<Book> getBookList() {
+        return bookList;
+    }
+
+    public void setBookList(List<Book> bookList) {
+        this.bookList = bookList;
+    }
+
     public Library() {
 
         bookList = new ArrayList<Book>(){{
