@@ -24,7 +24,7 @@ public class LibraryTest {
     }
 
     @Test
-    public void should_print_book_list_information() {
+    public void should_show_book_list_information() {
         assertEquals(library.toString(), bookListInfo);
     }
 }
