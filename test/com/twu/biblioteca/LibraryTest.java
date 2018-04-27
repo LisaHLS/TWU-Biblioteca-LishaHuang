@@ -13,7 +13,7 @@ public class LibraryTest {
     @Before
     public void setUp() {
         library = new Library();
-        String line = "==========================================================";
+        String line = "==========================================================\n";
         bookListInfo = String.format("%-20s%-20s%-20s\n" + line,"Name","Author","PublishedYear")
            + String.format("%-20s%-20s%-20s\n","Head First Java","Kent Belt",2003)
             + String.format("%-20s%-20s%-20s\n","Test-Driven Development","Kent Belt",2004)
