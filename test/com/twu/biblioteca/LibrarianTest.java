@@ -20,4 +20,10 @@ public class LibrarianTest {
     public void should_return_thank_you_enjoy_the_book_when_check_out_success() {
         assertEquals(librarian.checkOut(book), "Thank you! Enjoy the book");
     }
+
+    @Test
+    public void should_return_that_book_is_not_available_when_check_out_fail() {
+        librarian.checkOut(book);
+        assertEquals(librarian.checkOut(book), "That book is not available.");
+    }
 }
