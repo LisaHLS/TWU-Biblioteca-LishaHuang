@@ -115,6 +115,13 @@ public class MenuTest {
     }
 
     @Test
+    public void should_prompt_msg_when_return_book_fail() {
+        when(reader.readBook()).thenReturn("<Head First Java>,Kent Belt,2003");
+        menu.returnBook();
+        assertThat(systemOut()).contains("That is not a valid book to return.\n");
+    }
+
+    @Test
     public void should_return_false_and_prompt_quit_msg_when_choose_QUIT() {
         when(reader.readOption()).thenReturn("4");
         assertFalse(menu.processingBusinessAccordingToOption());
