@@ -4,7 +4,9 @@ import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 import static org.fest.assertions.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static org.mockito.internal.verification.VerificationModeFactory.times;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -54,7 +56,24 @@ public class MenuTest {
 
     @Test
 
-    public void should_return_false_and_prompt_quit_msg_when_choose_Quit() {
+    public void should_print_book_list_when_choose_LIST_BOOKS() {
+        when(reader.readOption()).thenReturn("1").thenReturn("4");
+        menu.init();
+        String line = "=========================================================================================\n";
+        String bookListInfo = String.format("%-25s%-35s%-30s\n" + line,"Name","Author","PublishedYear")
+            + String.format("%-40s%-40s%-40s\n","Head First Java","Kent Belt",2003)
+            + String.format("%-40s%-40s%-40s\n","Test-Driven Development","Kent Belt",2004)
+            + String.format("%-40s%-40s%-40s\n","Refactoring: Improving the Design","Martin Fowler",2010)
+            + String.format("%-40s%-40s%-40s\n","Head First Servlets & JSP","O'Reilly",2010)
+            + String.format("%-40s%-40s%-40s\n","Thinking in Java","Bruce Eckel ",2006)
+            + String.format("%-40s%-40s%-40s\n","Effective Java","Joshua Bloch",2009);
+        assertThat(systemOut()).contains(bookListInfo);
+        verify(reader, times(2)).readOption();
+    }
+
+    @Test
+
+    public void should_return_false_and_prompt_quit_msg_when_choose_QUIT() {
         when(reader.readOption()).thenReturn("4");
         assertFalse(menu.processingBusinessAccordingToOption());
         menu.init();
