@@ -62,13 +62,19 @@ public class Menu {
     public void checkOut() {
         while (true) {
             System.out.println("Please input the book name you want to check out:");
-            String[] bookInfo = reader.readBook().split(",");
-            Book book = new Book(bookInfo[0].substring(1,bookInfo[0].length()-1), bookInfo[1], Integer.valueOf(bookInfo[2]));
-            if (librarian.checkOut(book).equals("Thank you! Enjoy the book")) {
-                System.out.print("Thank you! Enjoy the book\n");
-                break;
+            String bookInfo = reader.readBook();
+            if(!bookInfo.equals("That book information is invalid")) {
+                String[] bookInfoArray = bookInfo.split(",");
+                Book book = new Book(bookInfoArray[0].substring(1,bookInfoArray[0].length()-1), bookInfoArray[1], Integer.valueOf(bookInfoArray[2]));
 
-            }else{
+                if (librarian.checkOut(book).equals("Thank you! Enjoy the book")) {
+                    System.out.print("Thank you! Enjoy the book\n");
+                    break;
+
+                }else{
+                    System.out.print("That book is not available.\n");
+                }
+            } else {
                 System.out.print("That book is not available.\n");
             }
         }
@@ -86,4 +92,5 @@ public class Menu {
         while (processingBusinessAccordingToOption()) { }
         printGoodByeMsg();
     }
+
 }
