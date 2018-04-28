@@ -2,16 +2,28 @@ package com.twu.biblioteca;
 
 public class Menu {
 
-    public final static String LIST_BOOKS = "1";
+    private final static String WELCOME_MSG = "Welcome to Biblioteca!";
+    private final static String OPTIONS_MENU = "1. List Books\n2. Check Out\n3. Return Book\n4. Quit\nPlease enter your choice(1～4):\n";
+    private final static String OPTION_INVALID_PROMPT_MSG = "Select a valid option! Please select again.\n";
+    private final static String OPTION_CHECK_OUT_PROMPT_MSG = "Please input book you want to check out,the format as:<book name>,author,publishedYear";
+    private final static String CHECK_OUT_SUCCESS_MSG = "Thank you! Enjoy the book.\n";
+    private final static String CHECK_OUT_FAIL_MSG = "That book is not available.\n";
+    private final static String OPTION_RETURN_BOOK_PROMPT_MSG = "Please input book you want to return,the format as:<book name>,author,publishedYear";
+    private final static String RETURN_BOOK_SUCCESS_MSG = "Thank you for returning the book.\n";
+    private final static String RETURN_BOOK_FAIL_MSG = "That is not a valid book to return.\n";
+    private final static String BOOK_INVALID_MSG = "That book information is invalid";
+    private final static String OPTION_QUIT_MSG = "Goodbye! welcome to the next time!\n";
 
-    public final static String CHECK_OUT = "2";
+    private final static String LIST_BOOKS = "1";
+    private final static String CHECK_OUT = "2";
+    private final static String RETURN_BOOK = "3";
+    private final static String QUIT = "4";
 
-    public final static String RETURN_BOOK = "3";
-
-    public final static String QUIT = "4";
+    private final static int INDEX_BOOK_NAME = 0;
+    private final static int INDEX_AUTHOR = 1;
+    private final static int INDEX_PUBLISH_YEAR = 2;
 
     private InputReader reader;
-
     private Librarian librarian;
 
     public Menu(InputReader reader) {
@@ -20,11 +32,11 @@ public class Menu {
     }
 
     public void printWelcomeMsg() {
-        System.out.println("Welcome to Biblioteca!");
+        System.out.println(WELCOME_MSG);
     }
 
     public void printAllOptions() {
-        System.out.print("1. List Books\n2. Check Out\n3. Return Book\n4. Quit\nPlease enter your choice(1～4):\n");
+        System.out.print(OPTIONS_MENU);
     }
 
     public boolean processingBusinessAccordingToOption () {
@@ -48,7 +60,7 @@ public class Menu {
                 break;
 
             default:
-                System.out.print("Select a valid option! Please select again.\n");
+                System.out.print(OPTION_INVALID_PROMPT_MSG);
                 break;
         }
         return result;
@@ -61,32 +73,32 @@ public class Menu {
 
     public void checkOut() {
         while (true) {
-            System.out.println("Please input book you want to check out,the format as:<book name>,author,publishedYear");
+            System.out.println(OPTION_CHECK_OUT_PROMPT_MSG);
             String bookInfo = reader.readBook();
-            if(!bookInfo.equals("That book information is invalid")
+            if(!bookInfo.equals(BOOK_INVALID_MSG)
                 && librarian.checkOut(transformBookInfoToObjectBook(bookInfo))) {
-                System.out.print("Thank you! Enjoy the book.\n");
+                System.out.print(CHECK_OUT_SUCCESS_MSG);
                 break;
 
             } else {
-                System.out.print("That book is not available.\n");
+                System.out.print(CHECK_OUT_FAIL_MSG);
             }
         }
     }
 
     public void returnBook() {
-        System.out.println("Please input book you want to return,the format as:<book name>,author,publishedYear");
+        System.out.println(OPTION_RETURN_BOOK_PROMPT_MSG);
         String bookInfo = reader.readBook();
-        if(!bookInfo.equals("That book information is invalid") && librarian.returnBook(transformBookInfoToObjectBook(bookInfo))) {
-            System.out.print("Thank you for returning the book.\n");
+        if(!bookInfo.equals(BOOK_INVALID_MSG) && librarian.returnBook(transformBookInfoToObjectBook(bookInfo))) {
+            System.out.print(RETURN_BOOK_SUCCESS_MSG);
 
         } else {
-            System.out.print("That is not a valid book to return.\n");
+            System.out.print(RETURN_BOOK_FAIL_MSG);
         }
     }
 
     public void printGoodByeMsg() {
-        System.out.print("Goodbye! welcome to the next time!\n");
+        System.out.print(OPTION_QUIT_MSG);
     }
 
     public void init() {
@@ -97,9 +109,8 @@ public class Menu {
 
     public Book transformBookInfoToObjectBook(String bookInfo) {
         String[] bookInfoArray = bookInfo.split(",");
-        Book book = new Book(bookInfoArray[0].substring(1, bookInfoArray[0].length() - 1),
-            bookInfoArray[1], Integer.valueOf(bookInfoArray[2]));
-        return book;
+        return new Book(bookInfoArray[INDEX_BOOK_NAME].substring(1, bookInfoArray[INDEX_BOOK_NAME].length() - 1),
+            bookInfoArray[INDEX_AUTHOR], Integer.valueOf(bookInfoArray[INDEX_PUBLISH_YEAR]));
     }
 
 }
