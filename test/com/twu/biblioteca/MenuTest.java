@@ -34,7 +34,7 @@ public class MenuTest {
     @Test
     public void should_print_all_options_after_welcome_msg() {
         menu.printAllOptions();
-        assertThat(systemOut().endsWith("1. List Books\n2. Checkout Book\n3. Return Book\n4. Quit\nPlease enter your choice(1～4):\n")).isTrue();
+        assertThat(systemOut().endsWith("1. List Books\n2. Check Out\n3. Return Book\n4. Quit\nPlease enter your choice(1～4):\n")).isTrue();
     }
 
     @Test
@@ -50,5 +50,5 @@ public class MenuTest {
         assertTrue(menu.processingBusinessAccordingToOption());
         assertThat(systemOut().endsWith("Select a valid option! Please select again.\n")).isTrue();
     }
-    
+
 }
