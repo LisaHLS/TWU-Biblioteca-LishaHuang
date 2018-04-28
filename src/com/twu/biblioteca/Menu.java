@@ -12,7 +12,7 @@ public class Menu {
     }
 
     public void printWelcomeMsg() {
-
+        System.out.println("Welcome to Biblioteca!");
     }
 
     public void printAllOptions() {
