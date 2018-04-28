@@ -16,6 +16,6 @@ public class BookTest {
 
     @Test
     public void should_book_have_name_author_publishedYear() {
-        assertEquals(book.toString(), String.format("%-20s%-20s%-20s\n","Head First Java","Kent Belt",2003));
+        assertEquals(book.toString(), String.format("%-40s%-40s%-40s\n","Head First Java","Kent Belt",2003));
     }
 }

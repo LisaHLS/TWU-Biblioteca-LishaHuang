@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Library {
 
-    public static final String ISOLATING_LINE  = "==========================================================\n";
+    public static final String ISOLATING_LINE  = "=========================================================================================\n";
     private List<Book> bookList;
 
     public List<Book> getBookList() {
@@ -31,7 +31,7 @@ public class Library {
     @Override
     public String toString(){
         StringBuilder builder = new StringBuilder();
-        builder.append(String.format("%-20s%-20s%-20s\n" + ISOLATING_LINE,"Name","Author","PublishedYear"));
+        builder.append(String.format("%-25s%-35s%-30s\n" + ISOLATING_LINE,"Name","Author","PublishedYear"));
         bookList.forEach(item -> builder.append(item.toString()));
         return builder.toString();
     }
