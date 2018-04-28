@@ -59,10 +59,6 @@ public class Menu {
 
     }
 
-    public void printGoodByeMsg() {
-
-    }
-
     public void checkOut() {
 
     }
@@ -70,7 +66,13 @@ public class Menu {
     public void returnBook() {
     }
 
-    public void init() {
+    public void printGoodByeMsg() {
+        System.out.print("Goodbye! welcome to the next time!\n");
+    }
 
+    public void init() {
+        printWelcomeMsg();
+        while (processingBusinessAccordingToOption()) { }
+        printGoodByeMsg();
     }
 }

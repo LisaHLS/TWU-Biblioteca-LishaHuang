@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 import static org.fest.assertions.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
@@ -49,6 +50,15 @@ public class MenuTest {
         when(reader.readOption()).thenReturn("jjj");
         assertTrue(menu.processingBusinessAccordingToOption());
         assertThat(systemOut().endsWith("Select a valid option! Please select again.\n")).isTrue();
+    }
+
+    @Test
+
+    public void should_return_false_and_prompt_quit_msg_when_choose_Quit() {
+        when(reader.readOption()).thenReturn("4");
+        assertFalse(menu.processingBusinessAccordingToOption());
+        menu.init();
+        assertThat(systemOut().endsWith("Goodbye! welcome to the next time!\n")).isTrue();
     }
 
 }
