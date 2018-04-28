@@ -12,11 +12,11 @@ public class Menu {
 
     private InputReader reader;
 
-    private Library library;
+    private Librarian librarian;
 
     public Menu(InputReader reader) {
         this.reader = reader;
-        library = new Library();
+        librarian = new Librarian();
     }
 
     public void printWelcomeMsg() {
@@ -56,11 +56,22 @@ public class Menu {
     }
 
     public void printBooksList() {
-        System.out.println(library.toString());
+        System.out.println(librarian.getLibrary().toString());
     }
 
     public void checkOut() {
+        while (true) {
+            System.out.println("Please input the book name you want to check out:");
+            String[] bookInfo = reader.readBook().split(",");
+            Book book = new Book(bookInfo[0].substring(1,bookInfo[0].length()-1), bookInfo[1], Integer.valueOf(bookInfo[2]));
+            if (librarian.checkOut(book).equals("Thank you! Enjoy the book")) {
+                System.out.println("Thank you! Enjoy the book");
+                break;
 
+            }else{
+                System.out.print("That book is not available.\n");
+            }
+        }
     }
 
     public void returnBook() {

@@ -72,10 +72,9 @@ public class MenuTest {
 
     @Test
     public void should_not_show_checked_out_books_after_CHECK_OUT() {
-        when(reader.readOption()).thenReturn("2");
         when(reader.readBook()).thenReturn("<Head First Java>,Kent Belt,2003");
-        when(reader.readOption()).thenReturn("1").thenReturn("4");
-        menu.init();
+        menu.checkOut();
+        menu.printBooksList();
         String line = "=========================================================================================\n";
         String bookListInfo = String.format("%-25s%-35s%-30s\n" + line,"Name","Author","PublishedYear")
             + String.format("%-40s%-40s%-40s\n","Test-Driven Development","Kent Belt",2004)
@@ -84,7 +83,6 @@ public class MenuTest {
             + String.format("%-40s%-40s%-40s\n","Thinking in Java","Bruce Eckel ",2006)
             + String.format("%-40s%-40s%-40s\n","Effective Java","Joshua Bloch",2009);
         assertThat(systemOut()).contains(bookListInfo);
-        verify(reader, times(3)).readOption();
     }
 
     @Test

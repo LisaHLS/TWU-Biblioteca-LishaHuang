@@ -8,6 +8,10 @@ public class Librarian {
         this.library = new Library();
     }
 
+    public Library getLibrary() {
+        return library;
+    }
+
     public String checkOut(Book book){
         if(library.getBookList().contains(book)) {
             library.getBookList().remove(book);
