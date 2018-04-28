@@ -55,7 +55,6 @@ public class MenuTest {
     }
 
     @Test
-
     public void should_print_book_list_when_choose_LIST_BOOKS() {
         when(reader.readOption()).thenReturn("1").thenReturn("4");
         menu.init();
@@ -72,7 +71,23 @@ public class MenuTest {
     }
 
     @Test
+    public void should_not_show_checked_out_books_after_CHECK_OUT() {
+        when(reader.readOption()).thenReturn("2");
+        when(reader.readBook()).thenReturn("<Head First Java>,Kent Belt,2003");
+        when(reader.readOption()).thenReturn("1").thenReturn("4");
+        menu.init();
+        String line = "=========================================================================================\n";
+        String bookListInfo = String.format("%-25s%-35s%-30s\n" + line,"Name","Author","PublishedYear")
+            + String.format("%-40s%-40s%-40s\n","Test-Driven Development","Kent Belt",2004)
+            + String.format("%-40s%-40s%-40s\n","Refactoring: Improving the Design","Martin Fowler",2010)
+            + String.format("%-40s%-40s%-40s\n","Head First Servlets & JSP","O'Reilly",2010)
+            + String.format("%-40s%-40s%-40s\n","Thinking in Java","Bruce Eckel ",2006)
+            + String.format("%-40s%-40s%-40s\n","Effective Java","Joshua Bloch",2009);
+        assertThat(systemOut()).contains(bookListInfo);
+        verify(reader, times(3)).readOption();
+    }
 
+    @Test
     public void should_return_false_and_prompt_quit_msg_when_choose_QUIT() {
         when(reader.readOption()).thenReturn("4");
         assertFalse(menu.processingBusinessAccordingToOption());
