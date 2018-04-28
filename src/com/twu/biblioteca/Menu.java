@@ -65,7 +65,7 @@ public class Menu {
             String[] bookInfo = reader.readBook().split(",");
             Book book = new Book(bookInfo[0].substring(1,bookInfo[0].length()-1), bookInfo[1], Integer.valueOf(bookInfo[2]));
             if (librarian.checkOut(book).equals("Thank you! Enjoy the book")) {
-                System.out.println("Thank you! Enjoy the book");
+                System.out.print("Thank you! Enjoy the book\n");
                 break;
 
             }else{

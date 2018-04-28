@@ -83,6 +83,17 @@ public class MenuTest {
             + String.format("%-40s%-40s%-40s\n","Thinking in Java","Bruce Eckel ",2006)
             + String.format("%-40s%-40s%-40s\n","Effective Java","Joshua Bloch",2009);
         assertThat(systemOut()).contains(bookListInfo);
+        assertThat(systemOut()).contains("Thank you! Enjoy the book\n");
+    }
+
+    @Test
+    public void should_prompt_msg_when_check_out_fail() {
+        when(reader.readBook()).thenReturn("<Head First Java>,Kent Belt,2003");
+        menu.checkOut();
+        when(reader.readBook()).thenReturn("<Head First Java>,Kent Belt,2003").thenReturn("<Test-Driven Development>,Kent Belt,2004");
+        menu.checkOut();
+        assertThat(systemOut()).contains("That book is not available.\n");
+        verify(reader, times(3)).readBook();
     }
 
     @Test
