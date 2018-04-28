@@ -61,7 +61,7 @@ public class Menu {
 
     public void checkOut() {
         while (true) {
-            System.out.println("Please input the book name you want to check out:");
+            System.out.println("Please input book you want to check out,the format as:<book name>,author,publishedYear");
             String bookInfo = reader.readBook();
             if(!bookInfo.equals("That book information is invalid")
                 && librarian.checkOut(transformBookInfoToObjectBook(bookInfo))) {
@@ -75,7 +75,7 @@ public class Menu {
     }
 
     public void returnBook() {
-        System.out.println("Please input the book name you want to return:");
+        System.out.println("Please input book you want to return,the format as:<book name>,author,publishedYear");
         String bookInfo = reader.readBook();
         if(!bookInfo.equals("That book information is invalid") && librarian.returnBook(transformBookInfoToObjectBook(bookInfo))) {
             System.out.print("Thank you for returning the book.\n");
