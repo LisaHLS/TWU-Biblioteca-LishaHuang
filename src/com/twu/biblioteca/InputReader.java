@@ -6,6 +6,8 @@ import java.util.regex.Pattern;
 public class InputReader {
 
     private Scanner scanner;
+    private static final String CHECK_OPTION_INVALID_REG = "[1-4]";
+    private static final String CHECK_BOOK_INVALID_REG = "<(([\\u4e00-\\u9fa5])|([a-zA-Z])|\\s)*>,(([\\u4e00-\\u9fa5])|([a-zA-Z])|\\s)*,[1-9]\\d*";
 
     public InputReader() {
         scanner = new Scanner(System.in);
@@ -13,14 +15,16 @@ public class InputReader {
 
     public String readOption() {
         String input = scanner.next().trim();
-        return Pattern.compile("[1-4]").matcher(input).matches() ? input : "Select a valid option!";
+        return isInputInvalid(input, CHECK_OPTION_INVALID_REG) ? input : "Select a valid option!";
     }
 
     public String readBook() {
         scanner.useDelimiter("\n");
         String input = scanner.next().trim();
-        String reg = "<(([\\u4e00-\\u9fa5])|([a-zA-Z])|\\s)*>,(([\\u4e00-\\u9fa5])|([a-zA-Z])|\\s)*,[1-9]\\d*";
-        return Pattern.compile(reg).matcher(input).matches() ? input : "That book information is invalid";
+        return isInputInvalid(input, CHECK_BOOK_INVALID_REG) ? input : "That book information is invalid";
     }
 
+    public boolean isInputInvalid(String input, String reg) {
+        return Pattern.compile(reg).matcher(input).matches();
+    }
 }

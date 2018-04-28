@@ -63,17 +63,11 @@ public class Menu {
         while (true) {
             System.out.println("Please input the book name you want to check out:");
             String bookInfo = reader.readBook();
-            if(!bookInfo.equals("That book information is invalid")) {
-                String[] bookInfoArray = bookInfo.split(",");
-                Book book = new Book(bookInfoArray[0].substring(1,bookInfoArray[0].length()-1), bookInfoArray[1], Integer.valueOf(bookInfoArray[2]));
+            if(!bookInfo.equals("That book information is invalid")
+                && librarian.checkOut(transformBookInfoToObjectBook(bookInfo))) {
+                System.out.print("Thank you! Enjoy the book.\n");
+                break;
 
-                if (librarian.checkOut(book)) {
-                    System.out.print("Thank you! Enjoy the book\n");
-                    break;
-
-                }else{
-                    System.out.print("That book is not available.\n");
-                }
             } else {
                 System.out.print("That book is not available.\n");
             }
@@ -83,16 +77,8 @@ public class Menu {
     public void returnBook() {
         System.out.println("Please input the book name you want to return:");
         String bookInfo = reader.readBook();
-        if(!bookInfo.equals("That book information is invalid")) {
-            String[] bookInfoArray = bookInfo.split(",");
-            Book book = new Book(bookInfoArray[0].substring(1, bookInfoArray[0].length() - 1),
-                bookInfoArray[1], Integer.valueOf(bookInfoArray[2]));
-            if (librarian.returnBook(book)) {
-                System.out.print("Thank you for returning the book\n");
-
-            }else{
-                System.out.print("That is not a valid book to return.\n");
-            }
+        if(!bookInfo.equals("That book information is invalid") && librarian.returnBook(transformBookInfoToObjectBook(bookInfo))) {
+            System.out.print("Thank you for returning the book.\n");
 
         } else {
             System.out.print("That is not a valid book to return.\n");
@@ -107,6 +93,13 @@ public class Menu {
         printWelcomeMsg();
         while (processingBusinessAccordingToOption()) { }
         printGoodByeMsg();
+    }
+
+    public Book transformBookInfoToObjectBook(String bookInfo) {
+        String[] bookInfoArray = bookInfo.split(",");
+        Book book = new Book(bookInfoArray[0].substring(1, bookInfoArray[0].length() - 1),
+            bookInfoArray[1], Integer.valueOf(bookInfoArray[2]));
+        return book;
     }
 
 }

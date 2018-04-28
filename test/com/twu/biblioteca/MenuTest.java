@@ -83,7 +83,7 @@ public class MenuTest {
             + String.format("%-40s%-40s%-40s\n","Thinking in Java","Bruce Eckel ",2006)
             + String.format("%-40s%-40s%-40s\n","Effective Java","Joshua Bloch",2009);
         assertThat(systemOut()).contains(bookListInfo);
-        assertThat(systemOut()).contains("Thank you! Enjoy the book\n");
+        assertThat(systemOut()).contains("Thank you! Enjoy the book.\n");
     }
 
     @Test
@@ -111,7 +111,7 @@ public class MenuTest {
             + String.format("%-40s%-40s%-40s\n","Effective Java","Joshua Bloch",2009)
             + String.format("%-40s%-40s%-40s\n","Head First Java","Kent Belt",2003);
         assertThat(systemOut()).contains(bookListInfo);
-        assertThat(systemOut()).contains("Thank you for returning the book\n");
+        assertThat(systemOut()).contains("Thank you for returning the book.\n");
     }
 
     @Test
