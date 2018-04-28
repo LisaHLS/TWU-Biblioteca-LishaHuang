@@ -20,6 +20,11 @@ public class Librarian {
     }
 
     public String returnBook(Book book){
-        return null;
+        if(!library.getBookList().contains(book)) {
+            library.getBookList().add(book);
+            library.setBookList(library.getBookList());
+            return "Thank you for returning the book.";
+        }
+        return "That is not a valid book to return.";
     }
 }

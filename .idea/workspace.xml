@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34ddcbcf-2684-410b-9b46-7d98fdd490af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -77,8 +78,8 @@
       <file leaf-file-name="Librarian.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="478">
+              <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -87,8 +88,8 @@
       <file leaf-file-name="LibrarianTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            <state relative-caret-position="310">
+              <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,8 +120,8 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/BookTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java" />
       </list>
     </option>
@@ -240,59 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibrarianTest.should_return_that_book_is_not_available_when_check_out_fail">
-    <configuration default="false" name="BookTest.should_book_have_name_author_publishedYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookTest" />
-      <option name="METHOD_NAME" value="should_book_have_name_author_publishedYear" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="LibraryTest.should_print_book_list_information" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibraryTest" />
-      <option name="METHOD_NAME" value="should_print_book_list_information" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.LibrarianTest.should_return_that_is_not_a_valid_book_to_return_when_return_book_fail">
     <configuration default="false" name="LibraryTest.should_show_book_list_information" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -358,6 +307,58 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibrarianTest" />
       <option name="METHOD_NAME" value="should_return_that_book_is_not_available_when_check_out_fail" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="LibrarianTest.should_return_thank_you_for_returning_the_book_when_return_book_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibrarianTest" />
+      <option name="METHOD_NAME" value="should_return_thank_you_for_returning_the_book_when_return_book_success" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="LibrarianTest.should_return_that_is_not_a_valid_book_to_return_when_return_book_fail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibrarianTest" />
+      <option name="METHOD_NAME" value="should_return_that_is_not_a_valid_book_to_return_when_return_book_fail" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -759,19 +760,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BookTest.should_book_have_name_author_publishedYear" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LibraryTest.should_print_book_list_information" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryTest.should_show_book_list_information" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_thank_you_enjoy_the_book_when_check_out_success" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_that_book_is_not_available_when_check_out_fail" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LibraryTest.should_show_book_list_information" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_thank_you_enjoy_the_book_when_check_out_success" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_that_book_is_not_available_when_check_out_fail" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_thank_you_for_returning_the_book_when_return_book_success" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_that_is_not_a_valid_book_to_return_when_return_book_fail" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_that_book_is_not_available_when_check_out_fail" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_thank_you_enjoy_the_book_when_check_out_success" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryTest.should_show_book_list_information" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LibraryTest.should_print_book_list_information" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BookTest.should_book_have_name_author_publishedYear" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_that_is_not_a_valid_book_to_return_when_return_book_fail" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_thank_you_for_returning_the_book_when_return_book_success" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_that_book_is_not_available_when_check_out_fail" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_thank_you_enjoy_the_book_when_check_out_success" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LibraryTest.should_show_book_list_information" />
       </list>
     </recent_temporary>
   </component>
@@ -791,31 +792,31 @@
       <workItem from="1524724444226" duration="9000" />
       <workItem from="1524724526448" duration="87000" />
       <workItem from="1524799328363" duration="13109000" />
-      <workItem from="1524879225398" duration="543000" />
+      <workItem from="1524879225398" duration="875000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest_should_book_have_name_author_publishedYear - 2018.04.27 at 13h 59m 24s.xml">
-      <configuration name="BookTest.should_book_have_name_author_publishedYear" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_should_book_have_name_author_publishedYear - 2018.04.27 at 13h 59m 57s.xml">
-      <configuration name="BookTest.should_book_have_name_author_publishedYear" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest_should_book_have_name_author_publishedYear - 2018.04.27 at 14h 03m 54s.xml">
-      <configuration name="BookTest.should_book_have_name_author_publishedYear" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibrarianTest_should_return_thank_you_enjoy_the_book_when_check_out_success - 2018.04.27 at 16h 30m 06s.xml">
-      <configuration name="LibrarianTest.should_return_thank_you_enjoy_the_book_when_check_out_success" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibrarianTest_should_return_thank_you_enjoy_the_book_when_check_out_success - 2018.04.27 at 16h 31m 40s.xml">
       <configuration name="LibrarianTest.should_return_thank_you_enjoy_the_book_when_check_out_success" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LibrarianTest_should_return_thank_you_enjoy_the_book_when_check_out_success - 2018.04.27 at 16h 44m 03s.xml">
       <configuration name="LibrarianTest.should_return_thank_you_enjoy_the_book_when_check_out_success" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LibrarianTest_should_return_thank_you_for_returning_the_book_when_return_book_success - 2018.04.28 at 09h 43m 34s.xml">
+      <configuration name="LibrarianTest.should_return_thank_you_for_returning_the_book_when_return_book_success" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibrarianTest_should_return_thank_you_for_returning_the_book_when_return_book_success - 2018.04.28 at 09h 45m 54s.xml">
+      <configuration name="LibrarianTest.should_return_thank_you_for_returning_the_book_when_return_book_success" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibrarianTest_should_return_thank_you_for_returning_the_book_when_return_book_success - 2018.04.28 at 09h 47m 46s.xml">
+      <configuration name="LibrarianTest.should_return_thank_you_for_returning_the_book_when_return_book_success" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="LibrarianTest_should_return_that_book_is_not_available_when_check_out_fail - 2018.04.27 at 16h 48m 00s.xml">
       <configuration name="LibrarianTest.should_return_that_book_is_not_available_when_check_out_fail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibrarianTest_should_return_that_is_not_a_valid_book_to_return_when_return_book_fail - 2018.04.28 at 09h 47m 50s.xml">
+      <configuration name="LibrarianTest.should_return_that_is_not_a_valid_book_to_return_when_return_book_fail" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LibraryTest_should_print_book_list_information - 2018.04.27 at 14h 36m 37s.xml">
       <configuration name="LibraryTest.should_print_book_list_information" configurationId="JUnit" />
@@ -828,7 +829,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13748000" />
+    <option name="totallyTimeSpent" value="14080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
@@ -837,13 +838,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25707814" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30237827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30237827" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -860,7 +862,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1020,16 +1021,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="478">
+          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="310">
+          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

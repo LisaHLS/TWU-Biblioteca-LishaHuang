@@ -29,6 +29,7 @@ public class LibrarianTest {
 
     @Test
     public void should_return_thank_you_for_returning_the_book_when_return_book_success() {
+        librarian.checkOut(book);
         assertEquals(librarian.returnBook(book), "Thank you for returning the book.");
     }
 
