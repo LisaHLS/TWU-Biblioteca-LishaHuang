@@ -10,8 +10,6 @@ import org.junit.Test;
 
 public class MenuTest {
 
-    private String OPTIONS_MENU = "1. List Books\\n2. Checkout Book\\n3. Return Book\\n4. Quit\\nPlease enter your choice(1～4):\\n";
-
     private Menu menu;
     private InputReader reader;
     private ByteArrayOutputStream outputContent;
@@ -34,7 +32,7 @@ public class MenuTest {
     @Test
     public void should_print_all_options_after_welcome_msg() {
         menu.printAllOptions();
-        assertThat(systemOut().endsWith(OPTIONS_MENU)).isTrue();
+        assertThat(systemOut().endsWith("1. List Books\n2. Checkout Book\n3. Return Book\n4. Quit\nPlease enter your choice(1～4):\n")).isTrue();
     }
 
 

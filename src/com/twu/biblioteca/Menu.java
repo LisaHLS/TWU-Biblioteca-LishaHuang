@@ -16,6 +16,7 @@ public class Menu {
     }
 
     public void printAllOptions() {
+        System.out.print("1. List Books\n2. Checkout Book\n3. Return Book\n4. Quit\nPlease enter your choice(1～4):\n");
     }
 
     public boolean processingBusinessAccordingToOption () {
