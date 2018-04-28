@@ -2,6 +2,15 @@ package com.twu.biblioteca;
 
 public class Menu {
 
+    private InputReader reader;
+
+    private Library library;
+
+    public Menu(InputReader reader) {
+        this.reader = reader;
+        library = new Library();
+    }
+
     public void printWelcomeMsg() {
 
     }
