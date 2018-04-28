@@ -26,4 +26,10 @@ public class LibrarianTest {
         librarian.checkOut(book);
         assertEquals(librarian.checkOut(book), "That book is not available.");
     }
+
+    @Test
+    public void should_return_thank_you_for_returning_the_book_when_return_book_success() {
+        assertEquals(librarian.returnBook(book), "That book is not available.");
+    }
+
 }
