@@ -29,7 +29,12 @@ public class LibrarianTest {
 
     @Test
     public void should_return_thank_you_for_returning_the_book_when_return_book_success() {
-        assertEquals(librarian.returnBook(book), "That book is not available.");
+        assertEquals(librarian.returnBook(book), "Thank you for returning the book.");
+    }
+
+    @Test
+    public void should_return_that_is_not_a_valid_book_to_return_when_return_book_fail() {
+        assertEquals(librarian.returnBook(book), "That is not a valid book to return.");
     }
 
 }
