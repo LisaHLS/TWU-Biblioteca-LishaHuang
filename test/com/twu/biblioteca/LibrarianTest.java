@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -18,24 +19,24 @@ public class LibrarianTest {
 
     @Test
     public void should_return_thank_you_enjoy_the_book_when_check_out_success() {
-        assertEquals(librarian.checkOut(book), "Thank you! Enjoy the book");
+        assertTrue(librarian.checkOut(book));
     }
 
     @Test
     public void should_return_that_book_is_not_available_when_check_out_fail() {
         librarian.checkOut(book);
-        assertEquals(librarian.checkOut(book), "That book is not available.");
+        assertFalse(librarian.checkOut(book));
     }
 
     @Test
     public void should_return_thank_you_for_returning_the_book_when_return_book_success() {
         librarian.checkOut(book);
-        assertEquals(librarian.returnBook(book), "Thank you for returning the book.");
+        assertTrue(librarian.returnBook(book));
     }
 
     @Test
     public void should_return_that_is_not_a_valid_book_to_return_when_return_book_fail() {
-        assertEquals(librarian.returnBook(book), "That is not a valid book to return.");
+        assertFalse(librarian.returnBook(book));
     }
 
 }

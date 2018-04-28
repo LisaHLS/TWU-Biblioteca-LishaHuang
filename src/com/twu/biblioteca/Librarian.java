@@ -12,21 +12,21 @@ public class Librarian {
         return library;
     }
 
-    public String checkOut(Book book){
+    public boolean checkOut(Book book){
         if(library.getBookList().contains(book)) {
             library.getBookList().remove(book);
             library.setBookList(library.getBookList());
-            return "Thank you! Enjoy the book";
+            return true;
         }
-        return "That book is not available.";
+        return false;
     }
 
-    public String returnBook(Book book){
+    public boolean returnBook(Book book){
         if(!library.getBookList().contains(book)) {
             library.getBookList().add(book);
             library.setBookList(library.getBookList());
-            return "Thank you for returning the book";
+            return true;
         }
-        return "That is not a valid book to return";
+        return false;
     }
 }

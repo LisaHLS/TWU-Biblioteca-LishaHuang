@@ -67,7 +67,7 @@ public class Menu {
                 String[] bookInfoArray = bookInfo.split(",");
                 Book book = new Book(bookInfoArray[0].substring(1,bookInfoArray[0].length()-1), bookInfoArray[1], Integer.valueOf(bookInfoArray[2]));
 
-                if (librarian.checkOut(book).equals("Thank you! Enjoy the book")) {
+                if (librarian.checkOut(book)) {
                     System.out.print("Thank you! Enjoy the book\n");
                     break;
 
@@ -87,7 +87,7 @@ public class Menu {
             String[] bookInfoArray = bookInfo.split(",");
             Book book = new Book(bookInfoArray[0].substring(1, bookInfoArray[0].length() - 1),
                 bookInfoArray[1], Integer.valueOf(bookInfoArray[2]));
-            if (librarian.returnBook(book).equals("Thank you for returning the book")) {
+            if (librarian.returnBook(book)) {
                 System.out.print("Thank you for returning the book\n");
 
             }else{
