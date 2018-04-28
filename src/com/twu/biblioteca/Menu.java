@@ -56,7 +56,7 @@ public class Menu {
     }
 
     public void printBooksList() {
-
+        System.out.println(library.toString());
     }
 
     public void checkOut() {
