@@ -1,7 +1,9 @@
 package com.twu.biblioteca;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.fest.assertions.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -35,5 +37,18 @@ public class MenuTest {
         assertThat(systemOut().endsWith("1. List Books\n2. Checkout Book\n3. Return Book\n4. Quit\nPlease enter your choice(1～4):\n")).isTrue();
     }
 
+    @Test
+    public void should_return_true_and_prompt_msg_when_input_not_in_options() {
+        when(reader.readOption()).thenReturn("5");
+        assertTrue(menu.processingBusinessAccordingToOption());
+        assertThat(systemOut().endsWith("Select a valid option! Please select again.\n")).isTrue();
+    }
 
+    @Test
+    public void should_return_true_and_prompt_msg_when_input_not_digit() {
+        when(reader.readOption()).thenReturn("jjj");
+        assertTrue(menu.processingBusinessAccordingToOption());
+        assertThat(systemOut().endsWith("Select a valid option! Please select again.\n")).isTrue();
+    }
+    
 }
