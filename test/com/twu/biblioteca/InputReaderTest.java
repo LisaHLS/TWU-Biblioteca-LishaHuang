@@ -49,5 +49,40 @@ public class InputReaderTest {
         assertThat(reader.readOption()).isEqualTo("Select a valid option!");
     }
 
+    @Test
+    public void should_return_book_info_when_input_has_all_book_info_and_order_is_name_author_publishedYear () throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("<Head First Java>,Kent Belt,2003");
+        assertThat(reader.readBook()).isEqualTo("<Head First Java>,Kent Belt,2003");
+    }
+
+    @Test
+    public void should_return_that_book_info_is_invalid_when_input_not_has_name() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("Kent Belt,2003");
+        assertThat(reader.readBook()).isEqualTo("That book information is invalid");
+    }
+
+    @Test
+    public void should_return_that_book_info_is_invalid_when_input_not_has_author() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("<Head First Java>,2003");
+        assertThat(reader.readBook()).isEqualTo("That book information is invalid");
+    }
+
+    @Test
+    public void should_return_that_book_info_is_invalid_when_input_not_has_publishedYear() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("<Head First Java>,Kent Belt");
+        assertThat(reader.readBook()).isEqualTo("That book information is invalid");
+    }
+
+    @Test
+    public void should_return_that_book_info_is_invalid_when_input_order_not_as_name_author_publishedYear() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("<Head First Java>,2003,Kent Belt");
+        assertThat(reader.readBook()).isEqualTo("That book information is invalid");
+    }
+
+    @Test
+    public void should_return_that_book_info_is_invalid_when_publishedYear_is_not_digit() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("<Head First Java>,Kent Belt,jjj");
+        assertThat(reader.readBook()).isEqualTo("That book information is invalid");
+    }
 
 }
