@@ -44,6 +44,7 @@ public class UserAccounts {
             if(userList.get(i).getLibraryNumber().equals(libraryNumber)
                 && userList.get(i).getPassWord().equals(passWord)) {
                 currentLoginUser = userList.get(i);
+                break;
             }
         }
     }

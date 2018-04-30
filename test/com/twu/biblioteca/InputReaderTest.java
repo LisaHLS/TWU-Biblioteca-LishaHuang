@@ -85,4 +85,16 @@ public class InputReaderTest {
         assertThat(reader.readBook()).isEqualTo("That book information is invalid");
     }
 
+    @Test
+    public void should_return_input_itself_when_libraryNumber_and_password_is_valid() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("110-1234,123456");
+        assertThat(reader.readLibraryNumberAndPassword()).isEqualTo("110-1234,123456");
+    }
+
+    @Test
+    public void should_return_prompt_msg_when_libraryNumber_and_password_is_invalid() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("1101234,123456");
+        assertThat(reader.readLibraryNumberAndPassword()).isEqualTo("That libraryNumber or password is invalid");
+    }
+
 }

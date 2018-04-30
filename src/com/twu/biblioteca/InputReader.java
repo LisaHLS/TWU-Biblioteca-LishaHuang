@@ -27,4 +27,8 @@ public class InputReader {
     public boolean isInputInvalid(String input, String reg) {
         return Pattern.compile(reg).matcher(input).matches();
     }
+
+    public String readLibraryNumberAndPassword() {
+        return null;
+    }
 }
