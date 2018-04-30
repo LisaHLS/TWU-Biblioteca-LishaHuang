@@ -38,6 +38,6 @@ public class UserAccountsTest {
     @Test
     public void should_return_user_name_email_phone_when_user_login() {
         userAccounts.login("110-1234", "123456");
-        assertEquals(userAccounts.showUserInformation(), " name: Jack, emailAddress: 123@163.com, phoneNumber: 15123476587");
+        assertEquals(userAccounts.showUserInformation(), "name: Jack, emailAddress: 123@163.com, phoneNumber: 15123476587");
     }
 }

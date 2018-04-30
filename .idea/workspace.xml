@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34ddcbcf-2684-410b-9b46-7d98fdd490af" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -70,16 +72,14 @@
       <file leaf-file-name="UserAccounts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="23" column="81" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="81" />
+            <state relative-caret-position="240">
+              <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#289#290#0" expanded="true" />
                 <element signature="e#320#321#0" expanded="true" />
                 <element signature="e#372#373#0" expanded="true" />
                 <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#1295#1296#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +88,8 @@
       <file leaf-file-name="UserAccountsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="38" column="71" lean-forward="true" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+            <state relative-caret-position="301">
+              <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#319#320#0" expanded="true" />
@@ -316,27 +316,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserAccountsTest.should_return_false_when_user_not_exist">
-    <configuration default="false" name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="biblioteca" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserAccountsTest.should_return_user_name_email_phone_when_user_login">
     <configuration default="false" name="UserAccountsTest.should_return_true_when_user_login_succeed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -428,6 +408,32 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.UserAccountsTest" />
       <option name="METHOD_NAME" value="should_return_false_when_user_not_exist" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserAccountsTest.should_return_user_name_email_phone_when_user_login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.UserAccountsTest" />
+      <option name="METHOD_NAME" value="should_return_user_name_email_phone_when_user_login" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -829,19 +835,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.BibliotecaApp" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_true_when_user_login_succeed" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_libraryNumber_is_wrong" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_password_is_wrong" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_user_not_exist" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_true_when_user_login_succeed" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_libraryNumber_is_wrong" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_password_is_wrong" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_user_not_exist" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_user_name_email_phone_when_user_login" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_user_not_exist" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_password_is_wrong" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_libraryNumber_is_wrong" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_true_when_user_login_succeed" />
-        <item index="4" class="java.lang.String" itemvalue="Application.BibliotecaApp" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_user_name_email_phone_when_user_login" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_user_not_exist" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_password_is_wrong" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_false_when_libraryNumber_is_wrong" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.should_return_true_when_user_login_succeed" />
       </list>
     </recent_temporary>
   </component>
@@ -863,14 +869,11 @@
       <workItem from="1524799328363" duration="13109000" />
       <workItem from="1524879225398" duration="1906000" />
       <workItem from="1524881159163" duration="21361000" />
-      <workItem from="1525053908057" duration="5181000" />
+      <workItem from="1525053908057" duration="5359000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MenuTest_should_show_return_books_and_prompt_msg_when_return_book_success - 2018.04.28 at 16h 47m 22s.xml">
-      <configuration name="MenuTest.should_show_return_books_and_prompt_msg_when_return_book_success" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserAccountsTest_should_return_false_when_libraryNumber_is_wrong - 2018.04.30 at 11h 08m 38s.xml">
       <configuration name="UserAccountsTest.should_return_false_when_libraryNumber_is_wrong" configurationId="JUnit" />
     </history-entry>
@@ -892,15 +895,18 @@
     <history-entry file="UserAccountsTest_should_return_false_when_user_not_exist - 2018.04.30 at 11h 18m 47s.xml">
       <configuration name="UserAccountsTest.should_return_false_when_user_not_exist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserAccountsTest_should_return_true_when_user_login_succeed - 2018.04.30 at 11h 08m 34s.xml">
-      <configuration name="UserAccountsTest.should_return_true_when_user_login_succeed" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserAccountsTest_should_return_true_when_user_login_succeed - 2018.04.30 at 11h 18m 40s.xml">
       <configuration name="UserAccountsTest.should_return_true_when_user_login_succeed" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserAccountsTest_should_return_user_name_email_phone_when_user_login - 2018.04.30 at 11h 46m 24s.xml">
+      <configuration name="UserAccountsTest.should_return_user_name_email_phone_when_user_login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserAccountsTest_should_return_user_name_email_phone_when_user_login - 2018.04.30 at 11h 46m 44s.xml">
+      <configuration name="UserAccountsTest.should_return_user_name_email_phone_when_user_login" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41653000" />
+    <option name="totallyTimeSpent" value="41831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
@@ -916,7 +922,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25707814" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19818799" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26500565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1393,24 +1399,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="23" column="81" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="81" />
+        <state relative-caret-position="240">
+          <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#289#290#0" expanded="true" />
             <element signature="e#320#321#0" expanded="true" />
             <element signature="e#372#373#0" expanded="true" />
             <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="38" column="71" lean-forward="true" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+        <state relative-caret-position="301">
+          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#319#320#0" expanded="true" />
