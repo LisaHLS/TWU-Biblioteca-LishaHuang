@@ -9,6 +9,8 @@ public class UserAccounts {
 
     private List<User> userList ;
 
+    private User currentLoginUser ;
+
     public List<User> getUserList() {
         return userList;
     }
@@ -29,21 +31,21 @@ public class UserAccounts {
     }
 
     public boolean login(String libraryNumber, String passWord) {
-        if(null != getUserByLibraryNumberAndPassWord(libraryNumber, passWord)) return true;
+        getCurrentLoginUserByLibraryNumberAndPassWord(libraryNumber, passWord);
+        if(null != currentLoginUser) return true;
         return false;
     }
 
-    public String showUserInformation(String libraryNumber, String passWord) {
+    public String showUserInformation() {
         return null;
     }
 
-    private User getUserByLibraryNumberAndPassWord (String libraryNumber, String passWord) {
+    private void getCurrentLoginUserByLibraryNumberAndPassWord(String libraryNumber, String passWord) {
         for (int i = 0; i < userList.size(); i++) {
             if(userList.get(i).getLibraryNumber().equals(libraryNumber)
                 && userList.get(i).getPassWord().equals(passWord)) {
-                return userList.get(i);
+                currentLoginUser = userList.get(i);
             }
         }
-        return null;
     }
 }
