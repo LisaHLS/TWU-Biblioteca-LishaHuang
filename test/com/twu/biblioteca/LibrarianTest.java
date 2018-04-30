@@ -25,20 +25,20 @@ public class LibrarianTest {
 
     @Test
     public void should_return_true_and_add_check_out_record_when_check_out_book_success() {
-        assertTrue(librarian.checkOut(book));
+        assertTrue(librarian.checkOutBook(book));
         assertTrue(librarian.getBookCheckOutRecord().containsKey(book)
             && librarian.getBookCheckOutRecord().containsValue(UserAccounts.currentLoginUser));
     }
 
     @Test
     public void should_return_false_when_check_out_book_fail() {
-        librarian.checkOut(book);
-        assertFalse(librarian.checkOut(book));
+        librarian.checkOutBook(book);
+        assertFalse(librarian.checkOutBook(book));
     }
 
     @Test
     public void should_return_true_and_remove_check_out_record_when_return_book_success() {
-        librarian.checkOut(book);
+        librarian.checkOutBook(book);
         assertTrue(librarian.returnBook(book));
         assertTrue(!librarian.getBookCheckOutRecord().containsKey(book)
             && !librarian.getBookCheckOutRecord().containsValue(UserAccounts.currentLoginUser));
@@ -51,16 +51,16 @@ public class LibrarianTest {
 
     @Test
     public void should_return_true_when_return_book_succeed_and_check_out_again() {
-        librarian.checkOut(book);
+        librarian.checkOutBook(book);
         librarian.returnBook(book);
-        assertTrue(librarian.checkOut(book));
+        assertTrue(librarian.checkOutBook(book));
         assertTrue(librarian.getBookCheckOutRecord().containsKey(book)
             && librarian.getBookCheckOutRecord().containsValue(UserAccounts.currentLoginUser));
     }
 
     @Test
     public void should_return_false_when_return_book_succeed_and_return_book_again() {
-        librarian.checkOut(book);
+        librarian.checkOutBook(book);
         librarian.returnBook(book);
         assertFalse(librarian.returnBook(book));
         assertTrue(!librarian.getBookCheckOutRecord().containsKey(book)
@@ -80,7 +80,7 @@ public class LibrarianTest {
 
     @Test
     public void should_show_book_check_out_record_when_books_checked_out() {
-        librarian.checkOut(book);
+        librarian.checkOutBook(book);
         assertTrue(librarian.showBookCheckOutRecord().equals("book: Head First Java, user: 110-1234\n"));
     }
 
