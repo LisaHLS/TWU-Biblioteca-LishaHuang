@@ -51,7 +51,9 @@ public class Librarian {
     }
 
     public String showBookCheckOutRecord() {
-        return null;
+        StringBuilder builder = new StringBuilder();
+        bookCheckOutRecord.forEach((book,user)->builder.append("book: " + book.getName()).append(", user: " + user.getLibraryNumber() + "\n"));
+        return builder.toString();
     }
 
 }
