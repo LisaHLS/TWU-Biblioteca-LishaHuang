@@ -2,6 +2,8 @@ package com.twu.biblioteca;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class UserAccounts {
 
@@ -27,6 +29,7 @@ public class UserAccounts {
     }
 
     public boolean login(String libraryNumber, String passWord) {
+        if(null != getUserByLibraryNumberAndPassWord(libraryNumber, passWord)) return true;
         return false;
     }
 
@@ -34,7 +37,13 @@ public class UserAccounts {
         return null;
     }
 
-    private User getUserByLibraryNumberAndPassWord () {
+    private User getUserByLibraryNumberAndPassWord (String libraryNumber, String passWord) {
+        for (int i = 0; i < userList.size(); i++) {
+            if(userList.get(i).getLibraryNumber().equals(libraryNumber)
+                && userList.get(i).getPassWord().equals(passWord)) {
+                return userList.get(i);
+            }
+        }
         return null;
     }
 }

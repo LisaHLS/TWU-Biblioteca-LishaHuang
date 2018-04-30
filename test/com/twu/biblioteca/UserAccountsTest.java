@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
@@ -20,16 +21,16 @@ public class UserAccountsTest {
 
     @Test
     public void should_return_false_when_libraryNumber_is_wrong() {
-        assertTrue(userAccounts.login("1101234", "123456"));
+        assertFalse(userAccounts.login("1101234", "123456"));
     }
 
     @Test
     public void should_return_false_when_password_is_wrong() {
-        assertTrue(userAccounts.login("110-1234", "1111111"));
+        assertFalse(userAccounts.login("110-1234", "1111111"));
     }
 
     @Test
     public void should_return_false_when_user_not_exist() {
-        assertTrue(userAccounts.login("199-9876", "123456"));
+        assertFalse(userAccounts.login("199-9876", "123456"));
     }
 }
