@@ -42,6 +42,11 @@ public class Librarian {
     }
 
     public boolean checkOutMovie(Movie movie) {
+        if(library.getMovieList().contains(movie)) {
+            library.getMovieList().remove(movie);
+            library.setMovieList(library.getMovieList());
+            return true;
+        }
         return false;
     }
 

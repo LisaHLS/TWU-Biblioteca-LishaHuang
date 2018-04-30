@@ -74,6 +74,7 @@ public class LibrarianTest {
 
     @Test
     public void should_return_false_when_check_out_movie_fail() {
+        librarian.checkOutMovie(movie);
         assertFalse(librarian.checkOutMovie(movie));
     }
 }
