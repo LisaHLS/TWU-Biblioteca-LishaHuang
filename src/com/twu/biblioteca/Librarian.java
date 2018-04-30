@@ -21,7 +21,7 @@ public class Librarian {
         return bookCheckOutRecord;
     }
 
-    public boolean checkOut(Book book){
+    public boolean checkOutBook(Book book){
         if(library.getBookList().contains(book)) {
             library.getBookList().remove(book);
             library.setBookList(library.getBookList());
