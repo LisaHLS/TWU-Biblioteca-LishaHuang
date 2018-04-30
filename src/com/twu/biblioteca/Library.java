@@ -46,11 +46,17 @@ public class Library {
         }};
     }
 
-    @Override
-    public String toString(){
+    public String toBooksString(){
         StringBuilder builder = new StringBuilder();
         builder.append(String.format("%-25s%-35s%-30s\n" + ISOLATING_LINE,"Name","Author","PublishedYear"));
         bookList.forEach(item -> builder.append(item.toString()));
+        return builder.toString();
+    }
+
+    public String toMoviesString(){
+        StringBuilder builder = new StringBuilder();
+        builder.append(String.format("%-30s%-30s%-20s%-30s\n" + ISOLATING_LINE,"Name","Year","Director","MovieRating"));
+        movieList.forEach(item -> builder.append(item.toString()));
         return builder.toString();
     }
 }

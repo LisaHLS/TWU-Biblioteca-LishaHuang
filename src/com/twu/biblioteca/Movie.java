@@ -51,7 +51,7 @@ public class Movie {
 
     @Override
     public String toString(){
-        return String.format("%-40s%-40s%-40s%-40s\n",name,year,director,movieRating);
+        return String.format("%-30s%-30s%-25s%-30s\n",name,year,director,movieRating);
     }
 
     @Override

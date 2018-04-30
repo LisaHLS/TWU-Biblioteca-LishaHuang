@@ -68,7 +68,7 @@ public class Menu {
     }
 
     public void printBooksList() {
-        System.out.println(librarian.getLibrary().toString());
+        System.out.println(librarian.getLibrary().toBooksString());
     }
 
     public void checkOut() {
