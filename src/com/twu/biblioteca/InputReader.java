@@ -33,4 +33,8 @@ public class InputReader {
         String input = scanner.next().trim();
         return isInputInvalid(input, CHECK_USER_LOGIN_INFO_INVALID_REG) ? input : "That libraryNumber or password is invalid";
     }
+
+    public String readChooseUserOrLibrarian(){
+        return null;
+    }
 }

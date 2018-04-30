@@ -97,4 +97,16 @@ public class InputReaderTest {
         assertThat(reader.readLibraryNumberAndPassword()).isEqualTo("That libraryNumber or password is invalid");
     }
 
+    @Test
+    public void should_return_choose_when_input_is_1_or_2() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("1");
+        assertThat(reader.readChooseUserOrLibrarian()).isEqualTo("1");
+    }
+
+    @Test
+    public void should_return_choose_when_input_not_1_and_2() throws NoSuchFieldException, IllegalAccessException {
+        setInputStream("3");
+        assertThat(reader.readChooseUserOrLibrarian()).isEqualTo("That choose is invalid");
+    }
+
 }
