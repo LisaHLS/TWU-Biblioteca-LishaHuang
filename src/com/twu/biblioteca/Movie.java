@@ -8,9 +8,9 @@ public class Movie {
 
     private String director;
 
-    private int movieRating;
+    private String movieRating;
 
-    public Movie(String name, int year, String director, int movieRating) {
+    public Movie(String name, int year, String director, String movieRating) {
         this.name = name;
         this.year = year;
         this.director = director;
@@ -41,11 +41,25 @@ public class Movie {
         this.director = director;
     }
 
-    public int getMovieRating() {
+    public String getMovieRating() {
         return movieRating;
     }
 
-    public void setMovieRating(int movieRating) {
+    public void setMovieRating(String movieRating) {
         this.movieRating = movieRating;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("%-40s%-40s%-40s%-40s\n",name,year,director,movieRating);
+    }
+
+    @Override
+    public boolean equals(Object object){
+        Movie movieObject = (Movie) object;
+        if(null != object && this.name.equals(movieObject.getName())
+            && this.year == movieObject.getYear()
+            && this.director.equals(movieObject.getDirector())) return true;
+        return false;
     }
 }
