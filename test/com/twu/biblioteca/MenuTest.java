@@ -30,14 +30,10 @@ public class MenuTest {
 
     @Test
     public void should_print_welcome_message_when_start_Biblioteca_app() {
-        menu.printWelcomeMsg();
+        when(reader.readOption()).thenReturn("4");
+        menu.init();
         assertThat(systemOut().startsWith("Welcome to Biblioteca!")).isTrue();
-    }
-
-    @Test
-    public void should_print_all_options_after_welcome_msg() {
-        menu.printAllOptions();
-        assertThat(systemOut().endsWith("1. List Books\n2. Check Out\n3. Return Book\n4. Quit\nPlease enter your choice(1～4):\n")).isTrue();
+        verify(reader, times(1)).readOption();
     }
 
     @Test

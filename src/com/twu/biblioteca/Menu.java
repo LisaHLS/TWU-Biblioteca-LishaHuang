@@ -31,16 +31,8 @@ public class Menu {
         librarian = new Librarian();
     }
 
-    public void printWelcomeMsg() {
-        System.out.println(WELCOME_MSG);
-    }
-
-    public void printAllOptions() {
-        System.out.print(OPTIONS_MENU);
-    }
-
     public boolean processingBusinessAccordingToOption () {
-        printAllOptions();
+        System.out.print(OPTIONS_MENU);
         boolean result = true;
         switch (reader.readOption()) {
             case LIST_BOOKS:
@@ -97,14 +89,10 @@ public class Menu {
         }
     }
 
-    public void printGoodByeMsg() {
-        System.out.print(OPTION_QUIT_MSG);
-    }
-
     public void init() {
-        printWelcomeMsg();
+        System.out.println(WELCOME_MSG);
         while (processingBusinessAccordingToOption()) { }
-        printGoodByeMsg();
+        System.out.print(OPTION_QUIT_MSG);
     }
 
     public Book transformBookInfoToObjectBook(String bookInfo) {
