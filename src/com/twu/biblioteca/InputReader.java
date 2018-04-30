@@ -9,6 +9,7 @@ public class InputReader {
     private static final String CHECK_OPTION_INVALID_REG = "[1-4]";
     private static final String CHECK_BOOK_INVALID_REG = "<(([\\u4e00-\\u9fa5])|([a-zA-Z])|\\s)*>,(([\\u4e00-\\u9fa5])|([a-zA-Z])|\\s)*,[1-9]\\d*";
     private static final String CHECK_USER_LOGIN_INFO_INVALID_REG = "\\d{3}-\\d{4},\\d*";
+    private static final String CHECK_CHOOSE_USER_OR_LIBRARIAN_INVALID_REG = "[1-2]";
 
     public InputReader() {
         scanner = new Scanner(System.in);
@@ -35,6 +36,7 @@ public class InputReader {
     }
 
     public String readChooseUserOrLibrarian(){
-        return null;
+        String input = scanner.next().trim();
+        return isInputInvalid(input, CHECK_CHOOSE_USER_OR_LIBRARIAN_INVALID_REG) ? input : "That choose is invalid";
     }
 }

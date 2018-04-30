@@ -4,7 +4,6 @@
     <list default="true" id="34ddcbcf-2684-410b-9b46-7d98fdd490af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/InputReader.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/InputReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/InputReaderTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/InputReaderTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,12 +28,10 @@
       <file leaf-file-name="InputReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/InputReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="43" />
+            <state relative-caret-position="374">
+              <caret line="39" column="114" lean-forward="false" selection-start-line="39" selection-start-column="114" selection-end-line="39" selection-end-column="114" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1347#1348#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +50,8 @@
       <file leaf-file-name="InputReaderTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/InputReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="108" column="88" lean-forward="false" selection-start-line="108" selection-start-column="88" selection-end-line="108" selection-end-column="88" />
+            <state relative-caret-position="296">
+              <caret line="106" column="42" lean-forward="true" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Librarian.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/LibrarianTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/InputReader.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/InputReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/InputReader.java" />
       </list>
     </option>
   </component>
@@ -314,59 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InputReaderTest.should_return_prompt_msg_when_libraryNumber_and_password_is_invalid">
-    <configuration default="false" name="LibrarianTest.should_return_true_when_check_out_movie_succeed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibrarianTest" />
-      <option name="METHOD_NAME" value="should_return_true_when_check_out_movie_succeed" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="LibrarianTest.should_return_false_when_check_out_movie_fail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.LibrarianTest" />
-      <option name="METHOD_NAME" value="should_return_false_when_check_out_movie_fail" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.InputReaderTest.should_return_choose_when_input_not_1_and_2">
     <configuration default="false" name="LibrarianTest.should_show_book_check_out_record_when_books_checked_out" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -432,6 +377,58 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.InputReaderTest" />
       <option name="METHOD_NAME" value="should_return_prompt_msg_when_libraryNumber_and_password_is_invalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="InputReaderTest.should_return_choose_when_input_is_1_or_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.InputReaderTest" />
+      <option name="METHOD_NAME" value="should_return_choose_when_input_is_1_or_2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="InputReaderTest.should_return_choose_when_input_not_1_and_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.InputReaderTest" />
+      <option name="METHOD_NAME" value="should_return_choose_when_input_not_1_and_2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -833,19 +830,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_true_when_check_out_movie_succeed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_false_when_check_out_movie_fail" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_show_book_check_out_record_when_books_checked_out" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_input_itself_when_libraryNumber_and_password_is_valid" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_prompt_msg_when_libraryNumber_and_password_is_invalid" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_show_book_check_out_record_when_books_checked_out" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_input_itself_when_libraryNumber_and_password_is_valid" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_prompt_msg_when_libraryNumber_and_password_is_invalid" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_choose_when_input_is_1_or_2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_choose_when_input_not_1_and_2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_prompt_msg_when_libraryNumber_and_password_is_invalid" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_input_itself_when_libraryNumber_and_password_is_valid" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_show_book_check_out_record_when_books_checked_out" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_false_when_check_out_movie_fail" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_return_true_when_check_out_movie_succeed" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_choose_when_input_not_1_and_2" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_choose_when_input_is_1_or_2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_prompt_msg_when_libraryNumber_and_password_is_invalid" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.InputReaderTest.should_return_input_itself_when_libraryNumber_and_password_is_valid" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LibrarianTest.should_show_book_check_out_record_when_books_checked_out" />
       </list>
     </recent_temporary>
   </component>
@@ -867,11 +864,17 @@
       <workItem from="1524799328363" duration="13109000" />
       <workItem from="1524879225398" duration="1906000" />
       <workItem from="1524881159163" duration="21361000" />
-      <workItem from="1525053908057" duration="17013000" />
+      <workItem from="1525053908057" duration="17173000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="InputReaderTest_should_return_choose_when_input_is_1_or_2 - 2018.04.30 at 16h 18m 41s.xml">
+      <configuration name="InputReaderTest.should_return_choose_when_input_is_1_or_2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputReaderTest_should_return_choose_when_input_not_1_and_2 - 2018.04.30 at 16h 18m 43s.xml">
+      <configuration name="InputReaderTest.should_return_choose_when_input_not_1_and_2" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="InputReaderTest_should_return_input_itself_when_libraryNumber_and_password_is_valid - 2018.04.30 at 16h 03m 31s.xml">
       <configuration name="InputReaderTest.should_return_input_itself_when_libraryNumber_and_password_is_valid" configurationId="JUnit" />
     </history-entry>
@@ -890,12 +893,6 @@
     <history-entry file="InputReaderTest_should_return_prompt_msg_when_libraryNumber_and_password_is_invalid - 2018.04.30 at 16h 10m 14s.xml">
       <configuration name="InputReaderTest.should_return_prompt_msg_when_libraryNumber_and_password_is_invalid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibrarianTest_should_return_false_when_check_out_movie_fail - 2018.04.30 at 15h 32m 26s.xml">
-      <configuration name="LibrarianTest.should_return_false_when_check_out_movie_fail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibrarianTest_should_return_false_when_check_out_movie_fail - 2018.04.30 at 15h 32m 43s.xml">
-      <configuration name="LibrarianTest.should_return_false_when_check_out_movie_fail" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibrarianTest_should_show_book_check_out_record_when_books_checked_out - 2018.04.30 at 15h 49m 20s.xml">
       <configuration name="LibrarianTest.should_show_book_check_out_record_when_books_checked_out" configurationId="JUnit" />
     </history-entry>
@@ -904,7 +901,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53485000" />
+    <option name="totallyTimeSpent" value="53645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
@@ -920,7 +917,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25707814" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26387316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26387316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -975,8 +972,6 @@
           <caret line="17" column="98" lean-forward="true" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1082,8 +1077,6 @@
           <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1414,20 +1407,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/InputReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="43" />
+        <state relative-caret-position="374">
+          <caret line="39" column="114" lean-forward="false" selection-start-line="39" selection-start-column="114" selection-end-line="39" selection-end-column="114" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/InputReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="108" column="88" lean-forward="false" selection-start-line="108" selection-start-column="88" selection-end-line="108" selection-end-column="88" />
+        <state relative-caret-position="296">
+          <caret line="106" column="42" lean-forward="true" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
