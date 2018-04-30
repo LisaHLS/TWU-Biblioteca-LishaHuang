@@ -8,12 +8,22 @@ public class Library {
     public static final String ISOLATING_LINE  = "=========================================================================================\n";
     private List<Book> bookList;
 
+    private List<Movie> movieList;
+
     public List<Book> getBookList() {
         return bookList;
     }
 
     public void setBookList(List<Book> bookList) {
         this.bookList = bookList;
+    }
+
+    public List<Movie> getMovieList() {
+        return movieList;
+    }
+
+    public void setMovieList(List<Movie> movieList) {
+        this.movieList = movieList;
     }
 
     public Library() {
@@ -25,6 +35,14 @@ public class Library {
             add(new Book("Head First Servlets & JSP", "O'Reilly",2010));
             add(new Book("Thinking in Java", "Bruce Eckel",2006));
             add(new Book("Effective Java", "Joshua Bloch",2009));
+        }};
+
+        movieList = new ArrayList<Movie>() {{
+            add(new Movie("The Great Buddha+", 2017, "Xinyao Huang", "9"));
+            add(new Movie("Wonder", 2017, "Stephen Jobo", "9"));
+            add(new Movie("The Post", 2017, "Steven Spielberg", "8"));
+            add(new Movie("Lady Bird", 2017, "Greta Geerwig", "8"));
+            add(new Movie("The Faces of My Gene", 2018, "Degang Guo", "4"));
         }};
     }
 
