@@ -50,4 +50,8 @@ public class Librarian {
         return false;
     }
 
+    public String showBookCheckOutRecord() {
+        return null;
+    }
+
 }

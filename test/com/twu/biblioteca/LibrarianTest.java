@@ -77,4 +77,11 @@ public class LibrarianTest {
         librarian.checkOutMovie(movie);
         assertFalse(librarian.checkOutMovie(movie));
     }
+
+    @Test
+    public void should_show_book_check_out_record_when_books_checked_out() {
+        librarian.checkOut(book);
+        assertFalse(librarian.showBookCheckOutRecord().equals("book: Head First Java, user: 110-1234\n"));
+    }
+
 }
