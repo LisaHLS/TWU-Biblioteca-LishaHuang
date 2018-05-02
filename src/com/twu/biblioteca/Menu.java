@@ -75,7 +75,7 @@ public class Menu {
                 break;
 
             case LIBRARIAN_LOGOUT:
-                userOrLibrarianLogin();
+                result = userOrLibrarianLogin();
                 break;
 
             case QUIT_SYSTEM:
@@ -119,7 +119,7 @@ public class Menu {
                 break;
 
             case USER_LOGOUT:
-                userOrLibrarianLogin();
+                result = userOrLibrarianLogin();
                 break;
 
             case QUIT:
