@@ -26,8 +26,8 @@ public class LibrarianTest {
     @Test
     public void should_return_true_and_add_check_out_record_when_check_out_book_success() {
         assertTrue(librarian.checkOutBook(book));
-        assertTrue(librarian.getBookCheckOutRecord().containsKey(book)
-            && librarian.getBookCheckOutRecord().containsValue(UserAccounts.currentLoginUser));
+        assertTrue(librarian.getBookCheckOutRecord().containsKey("Head First Java")
+            && librarian.getBookCheckOutRecord().containsValue("110-1234"));
     }
 
     @Test
@@ -40,8 +40,8 @@ public class LibrarianTest {
     public void should_return_true_and_remove_check_out_record_when_return_book_success() {
         librarian.checkOutBook(book);
         assertTrue(librarian.returnBook(book));
-        assertTrue(!librarian.getBookCheckOutRecord().containsKey(book)
-            && !librarian.getBookCheckOutRecord().containsValue(UserAccounts.currentLoginUser));
+        assertTrue(!librarian.getBookCheckOutRecord().containsKey("Head First Java")
+            && !librarian.getBookCheckOutRecord().containsValue("110-1234"));
     }
 
     @Test
@@ -54,8 +54,8 @@ public class LibrarianTest {
         librarian.checkOutBook(book);
         librarian.returnBook(book);
         assertTrue(librarian.checkOutBook(book));
-        assertTrue(librarian.getBookCheckOutRecord().containsKey(book)
-            && librarian.getBookCheckOutRecord().containsValue(UserAccounts.currentLoginUser));
+        assertTrue(librarian.getBookCheckOutRecord().containsKey("Head First Java")
+            && librarian.getBookCheckOutRecord().containsValue("110-1234"));
     }
 
     @Test
@@ -63,8 +63,8 @@ public class LibrarianTest {
         librarian.checkOutBook(book);
         librarian.returnBook(book);
         assertFalse(librarian.returnBook(book));
-        assertTrue(!librarian.getBookCheckOutRecord().containsKey(book)
-            && !librarian.getBookCheckOutRecord().containsValue(UserAccounts.currentLoginUser));
+        assertTrue(!librarian.getBookCheckOutRecord().containsKey("Head First Java")
+            && !librarian.getBookCheckOutRecord().containsValue("110-1234"));
     }
 
     @Test

@@ -6,7 +6,7 @@ import java.util.Map;
 public class Librarian {
 
     private Library library;
-    private Map<Book, User> bookCheckOutRecord;
+    private Map<String, String> bookCheckOutRecord;
 
     public Librarian() {
         this.library = new Library();
@@ -17,7 +17,7 @@ public class Librarian {
         return library;
     }
 
-    public Map<Book, User> getBookCheckOutRecord() {
+    public Map<String, String> getBookCheckOutRecord() {
         return bookCheckOutRecord;
     }
 
@@ -25,7 +25,7 @@ public class Librarian {
         if(library.getBookList().contains(book)) {
             library.getBookList().remove(book);
             library.setBookList(library.getBookList());
-            bookCheckOutRecord.put(book,UserAccounts.currentLoginUser);
+            bookCheckOutRecord.put(book.getName(),UserAccounts.currentLoginUser.getLibraryNumber());
             return true;
         }
         return false;
@@ -35,7 +35,7 @@ public class Librarian {
         if(!library.getBookList().contains(book)) {
             library.getBookList().add(book);
             library.setBookList(library.getBookList());
-            bookCheckOutRecord.remove(book,UserAccounts.currentLoginUser);
+            bookCheckOutRecord.remove(book.getName(),UserAccounts.currentLoginUser.getLibraryNumber());
             return true;
         }
         return false;
@@ -52,7 +52,7 @@ public class Librarian {
 
     public String showBookCheckOutRecord() {
         StringBuilder builder = new StringBuilder();
-        bookCheckOutRecord.forEach((book,user)->builder.append("book: " + book.getName()).append(", user: " + user.getLibraryNumber() + "\n"));
+        bookCheckOutRecord.forEach((book,user)->builder.append("book: " + book).append(", user: " + user + "\n"));
         return builder.toString();
     }
 
