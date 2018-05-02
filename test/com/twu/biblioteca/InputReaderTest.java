@@ -29,9 +29,9 @@ public class InputReaderTest {
     public void should_return_input_itself_when_user_option_is_digit_and_in_options_else_return_prompt_msg () throws NoSuchFieldException, IllegalAccessException {
         setInputStream("1");
         assertThat(reader.readUserOption()).isEqualTo("1");
-        setInputStream("7");
-        assertThat(reader.readUserOption()).isEqualTo("7");
         setInputStream("8");
+        assertThat(reader.readUserOption()).isEqualTo("8");
+        setInputStream("9");
         assertThat(reader.readUserOption()).isEqualTo("Select a valid option!");
         setInputStream("a");
         assertThat(reader.readUserOption()).isEqualTo("Select a valid option!");
