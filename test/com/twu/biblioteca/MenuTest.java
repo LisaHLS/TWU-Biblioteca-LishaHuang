@@ -155,6 +155,8 @@ public class MenuTest {
 
     @Test
     public void should_prompt_msg_when_check_out_book_fail() {
+        when(reader.readLibraryNumberAndPassword()).thenReturn("110-1234,123456");
+        menu.userLogin();
         when(reader.readBook()).thenReturn("<Head First Java>,Kent Belt,2003");
         menu.checkOutBook();
         when(reader.readBook()).thenReturn("<Head First Java>,Kent Belt,2003").thenReturn("<Test-Driven Development>,Kent Belt,2004");
