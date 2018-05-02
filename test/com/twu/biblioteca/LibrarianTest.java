@@ -19,7 +19,7 @@ public class LibrarianTest {
         book = new Book("Head First Java","Kent Belt",2003);
         userAccounts = new UserAccounts();
         userAccounts.login("110-1234", "123456");
-        movie = new Movie("The Great Buddha+", 2017, "Xinyao Huang", "9");
+        movie = new Movie("The Great Buddha", 2017, "Xinyao Huang", "9");
 
     }
 
