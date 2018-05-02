@@ -36,7 +36,7 @@ public class UserAccounts {
 
     public String showUserInformation() {
         return "name: " + currentLoginUser.getName() + ", emailAddress: " + currentLoginUser.getEmailAddress()
-            + ", phoneNumber: " + currentLoginUser.getPhoneNumber();
+            + ", phoneNumber: " + currentLoginUser.getPhoneNumber() + "\n";
     }
 
     private void getCurrentLoginUserByLibraryNumberAndPassWord(String libraryNumber, String passWord) {
