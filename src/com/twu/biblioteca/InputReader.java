@@ -23,7 +23,7 @@ public class InputReader {
     }
 
     public String readBook() {
-        String input = scanner.nextLine().trim();
+        String input = scanner.useDelimiter("\n").next().trim();
         return isInputInvalid(input, CHECK_BOOK_INVALID_REG) ? input : "That book information is invalid";
     }
 
@@ -43,7 +43,7 @@ public class InputReader {
     }
 
     public String readMovie() {
-        String input = scanner.nextLine().trim();
+        String input = scanner.useDelimiter("\n").next().trim();
         return isInputInvalid(input, CHECK_MOVIE_INVALID_REG) ? input : "That movie information is invalid";
     }
 
