@@ -182,7 +182,7 @@ public class MenuTest {
             + String.format("%-40s%-40s%-40s\n","Head First Java","Kent Belt",2003);
         assertThat(systemOut()).contains(bookListInfo);
         assertThat(systemOut()).contains("Thank you for returning the book.\n");
-        assertFalse(systemOut().equals("book: Head First Java, user: 110-1234\n"));
+        assertFalse(systemOut().contains("book: Head First Java, user: 110-1234\n"));
     }
 
     @Test
