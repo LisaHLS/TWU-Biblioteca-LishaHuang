@@ -38,9 +38,6 @@ public class MenuTest {
 
     @Test
     public void should_return_true_and_prompt_msg_when_input_not_in_options() {
-        when(reader.readChooseUserOrLibrarian()).thenReturn("4");
-        assertTrue(menu.userOrLibrarianLogin());
-        assertThat(systemOut().endsWith("Select a valid option! Please select again.\n")).isTrue();
 
         when(reader.readLibrarianOption()).thenReturn("5");
         assertTrue(menu.librarianProcessAccordingToOption());
@@ -169,9 +166,12 @@ public class MenuTest {
     @Test
     public void should_show_return_books_and_prompt_msg_when_return_book_success() {
         when(reader.readBook()).thenReturn("<Head First Java>,Kent Belt,2003");
+        when(reader.readLibraryNumberAndPassword()).thenReturn("110-1234,123456");
+        menu.userLogin();
         menu.checkOutBook();
         menu.returnBook();
         menu.printBooksList();
+        menu.showCheckOutBookRecord();
         String line = "=========================================================================================\n";
         String bookListInfo = String.format("%-25s%-35s%-30s\n" + line,"Name","Author","PublishedYear")
             + String.format("%-40s%-40s%-40s\n","Test-Driven Development","Kent Belt",2004)
@@ -182,6 +182,7 @@ public class MenuTest {
             + String.format("%-40s%-40s%-40s\n","Head First Java","Kent Belt",2003);
         assertThat(systemOut()).contains(bookListInfo);
         assertThat(systemOut()).contains("Thank you for returning the book.\n");
+        assertFalse(systemOut().equals("book: Head First Java, user: 110-1234\n"));
     }
 
     @Test
