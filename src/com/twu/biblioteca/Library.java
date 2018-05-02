@@ -38,7 +38,7 @@ public class Library {
         }};
 
         movieList = new ArrayList<Movie>() {{
-            add(new Movie("The Great Buddha+", 2017, "Xinyao Huang", "9"));
+            add(new Movie("The Great Buddha", 2017, "Xinyao Huang", "9"));
             add(new Movie("Wonder", 2017, "Stephen Jobo", "9"));
             add(new Movie("The Post", 2017, "Steven Spielberg", "8"));
             add(new Movie("Lady Bird", 2017, "Greta Geerwig", "8"));

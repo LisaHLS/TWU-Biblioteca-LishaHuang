@@ -24,7 +24,7 @@ public class LibraryTest {
             + String.format("%-40s%-40s%-40s\n","Effective Java","Joshua Bloch",2009);
 
         movieListInfo = String.format("%-30s%-30s%-20s%-30s\n" + line,"Name","Year","Director","MovieRating")
-            + String.format("%-30s%-30s%-25s%-30s\n","The Great Buddha+",2017,"Xinyao Huang","9")
+            + String.format("%-30s%-30s%-25s%-30s\n","The Great Buddha",2017,"Xinyao Huang","9")
             + String.format("%-30s%-30s%-25s%-30s\n","Wonder", 2017, "Stephen Jobo", "9")
             + String.format("%-30s%-30s%-25s%-30s\n","The Post", 2017, "Steven Spielberg", "8")
             + String.format("%-30s%-30s%-25s%-30s\n","Lady Bird", 2017, "Greta Geerwig", "8")
